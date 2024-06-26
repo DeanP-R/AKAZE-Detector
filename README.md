@@ -4,7 +4,12 @@
 
 This ROS2 package implemented an AKAZE feature detector node. The node subscribed to an image topic, processed the images using the AKAZE algorithm, and published the processed images with detected keypoints. The images were captured using an iPhone as a webcam with the help of Iriun for Linux and the `ros2_usb_camera` package.
 
+![AKAZE Image 1](AKAZE_image_1.png)
+
+![AKAZE Image 2](AKAZE_image_2.png)
+
 ## Process Description
+
 
 ### Using an iPhone as a Webcam
 
@@ -81,3 +86,6 @@ The implementation of the AKAZE feature detector involved the following steps:
 
 The processed images with keypoints were visualised using `rqt_image_view`. `rqt` was opened, and the `Image View` plugin was added. The `akaze_image` topic was then selected to see the output
 .`
+
+
+[AKAZE Video](docs/AKAZE_Video.webm)
