@@ -79,11 +79,11 @@ The implementation of the AKAZE feature detector involved the following steps:
      ```
    - The `akaze_detector_node` was run:
      ```
+     ros2 run usb_camera_driver usb_camera_driver_node --ros-args --params-file    /ros2_ws/src/ros2_usb_camera/config/config.yaml
+     ```
+     and
+     ```
      ros2 run akaze_detector akaze_detector_node
-     ```
-     or
-     ```
-     ros2 run usb_camera_driver usb_camera_driver_node --ros-args --params-file /ros2_ws/src/ros2_usb_camera/config/config.yaml
      ```
 ## Visualising the Processed Images
 
