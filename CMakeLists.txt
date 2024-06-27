@@ -20,7 +20,14 @@ ament_target_dependencies(akaze_detector_node rclcpp sensor_msgs OpenCV cv_bridg
 install(TARGETS
   akaze_detector_node
   DESTINATION lib/${PROJECT_NAME})
-  
+# Install launch files.
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
