@@ -81,7 +81,10 @@ The implementation of the AKAZE feature detector involved the following steps:
      ```
      ros2 run akaze_detector akaze_detector_node
      ```
-
+     or
+     ```
+     ros2 run usb_camera_driver usb_camera_driver_node --ros-args --params-file /ros2_ws/src/ros2_usb_camera/config/config.yaml
+     ```
 ## Visualising the Processed Images
 
 The processed images with keypoints were visualised using `rqt_image_view`. `rqt` was opened, and the `Image View` plugin was added. The `akaze_image` topic was then selected to see the output
